@@ -3,6 +3,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 
 }
 
@@ -13,17 +14,20 @@ main {
     min-width: 380px;
     /* flex-wrap: wrap; */
     margin: 30px;
+    padding-bottom: 30px;
 
 }
 
 .container_row {
     display: flex;
+    padding-top: 30px;
 }
 
+
+/* habit making styling */
 .habitcont {
     background-color: white;
     width: 40%;
-
     margin: 20px;
     padding: 20px;
 }
@@ -32,20 +36,113 @@ main {
     margin-bottom: 10px;
 }
 
+.habitcont form {
+    position: relative;
+}
+
+.habitcont input {
+    width: 70%;
+    margin: 5px 0 5px 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+#active {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+
+    width: 40%;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    background-color: #E8B4FA;
+}
+
+
+/* commitment styling */
 .commcont {
     background-color: white;
     width: 40%;
     margin: 20px;
     padding: 20px;
+    position: relative;
+    padding-bottom: 70px;
 }
 
+.commcont p {
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+    background-color: #E8B4FA;
+    border: none;
+}
+
+#slider-range-max {
+    margin-top: 10px;
+    background-color: #E8B4FA;
+}
+
+#amount {
+    padding-top: 15px;
+    font-size: 18px;
+    position: absolute;
+    right: -150px;
+    bottom: 15px;
+    background: none;
+}
+
+
+/* category styling */
 .catcont {
     background-color: white;
     width: 40%;
     margin: 20px;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
 }
 
+
+.cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 20px 0px 20px;
+    font-size: 12px;
+}
+
+.catimg {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.catimg img{
+    width: 90%;
+    height: 90%;
+}
+.catimg p {
+    padding-top: 5px;
+    width: 100px;
+}    
+
+
+/* button styling */
 .butcont {
     width: 40%;
     position: relative;
@@ -55,9 +152,17 @@ main {
     position: absolute;
     right: 60px;
     bottom: 10px;
+    padding: 10px;
+    background-color: #EFEBDF;
+    border-radius: 10px;
+    border: none;
 }
 .but_second {
     position: absolute;
-    right: 0px;
+    right: -35px;
     bottom: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: #E8B4FA;
+    border-radius: 10px;
+    border: none;
 }

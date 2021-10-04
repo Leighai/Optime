@@ -38,6 +38,14 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+} */
+
 nav img {
     width: 200px;
     /* margin-right: 200px; */
@@ -45,10 +53,85 @@ nav img {
 }
 
 main {
-    flex: 3;
-    background-color: #EFEBDF;
+    flex: 2;
 }
 
+.banner-container {
+    background-color: #EFEBDF;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.heading {
+    text-align: center;
+    padding: 50px;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.getstarted {
+    font-size: 24px;
+    width: 160px;
+    height: 60px;
+    background-color: #E8B4FA;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.landing-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.leftimage{
+    width: 500px;
+    position: relative;
+    animation-name: leftimage;
+    animation-duration: 3s;
+}
+@keyframes leftimage {
+    0% {top: -350px; left: -600px;}
+    100% {top: 0px; left: 0px}
+}
+
+.rightimage {
+    width: 500px;
+    position: relative;
+    animation-name: rightimage;
+    animation-duration: 3s;
+}
+@keyframes rightimage {
+    0% {top: -350px; left: 600px;}
+    100% {top: 0px; left: 0px}
+}
+
+.how-container {
+    background-color: #FFFFFF;
+    margin-top: 80px;
+}
+
+.setup, .checkoff, .seeprogress {
+    text-align: center;
+    
+}
+
+.howitworks {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px 120px 0px;
+}
+
+
+
+
+/* FOOTER */
 footer {
     display: flex;
     background-color: black;
@@ -56,6 +139,33 @@ footer {
     color: #FFFFFF;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
+
+footer div {
+    margin: 20px;
+    text-align:left;
+}
+
+footer div h2{
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+}
+
+footer p {
+    max-width: 200px;
+    font-size: 16px;
+    margin:10px 0 10px 0 ;
+}
+
+.socialmedia-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+.socialmedia {
+    width: 35px;
 }
 
 footer ul {
@@ -66,21 +176,6 @@ footer ul {
 footer ul li a {
     text-decoration: none;
     color: #FFFFFF;
-
-}
-
-footer div {
-    margin: 20px;
-    text-align:left;
-}
-footer p {
-    max-width: 200px;
-    font-size: 20px;
-    margin:10px 0 10px 0 ;
-
-}
-
-footer div h2{
-    font-size: 48px;
-    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    /* color: white; */
 }

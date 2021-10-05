@@ -47,6 +47,11 @@ main {
     box-sizing: border-box;
 }
 
+::placeholder {
+    color:rgb(71, 71, 71);
+    opacity: 0.8; /* Firefox */
+  }
+
 #active {
     position: absolute;
     bottom: -60px;

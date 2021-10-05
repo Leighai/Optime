@@ -1,0 +1,200 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.maincont {
+    flex: 2;
+    background-color: #5B5B5B;
+    width: 80%;
+    min-width: 380px;
+    /* flex-wrap: wrap; */
+    margin: 30px;
+    padding-bottom: 30px;
+
+}
+
+.container_row {
+    display: flex;
+    padding-top: 30px;
+}
+
+
+/* habit making styling */
+.habitcont {
+    background-color: white;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.habitcont h3 {
+    margin-bottom: 10px;
+}
+
+.habitcont form {
+    position: relative;
+}
+
+.habitcont input {
+    width: 80%;
+    margin: 5px 0 5px 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color:rgb(71, 71, 71);
+    opacity: 0.8; /* Firefox */
+  }
+
+
+/* commitment styling */
+.commcont {
+    background-color: white;
+    width: 40%;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.commcont p {
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+}
+
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+    background-color: #E8B4FA;
+    border: none;
+}
+
+#slider-range-max {
+    margin-top: 10px;
+    background-color: #E8B4FA;
+}
+
+#amount {
+    padding-top: 15px;
+    font-size: 18px;
+    position: absolute;
+    right: -150px;
+    bottom: 15px;
+    background: none;
+}
+
+
+/* category styling */
+.catcont {
+    background-color: white;
+    width: 40%;
+    margin: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+
+.cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 20px 0px 20px;
+    font-size: 12px;
+}
+
+.catimg {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.catimg img{
+    width: 90%;
+    height: 90%;
+}
+.catimg p {
+    padding-top: 5px;
+    width: 100px;
+}    
+
+
+/* button styling */
+.butcont {
+    width: 40%;
+    position: relative;
+}
+
+.but_first {
+    position: absolute;
+    right: 60px;
+    bottom: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: #EFEBDF;
+    border-radius: 10px;
+    border: none;
+}
+.but_second {
+    position: absolute;
+    right: -35px;
+    bottom: 10px;
+    padding: 10px 20px 10px 20px;
+    background-color: #E8B4FA;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* mobile version */
+@media screen and (max-width: 600px) {
+    .maincont {
+        padding-bottom: 100px;
+    }
+    
+    .container_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 80%; */
+    }
+
+    .habitcont,
+    .catcont,
+    .commcont {
+        width: 70%;
+        /* margin: 20px;
+        padding: 20px 20px 40px 20px; */
+    }
+    .catimg {
+        width: 35px;
+        height: 35px;
+    }
+    .catimg p{
+        font-size: 10px;
+    }
+    .but_first,
+    .but_second {
+        bottom: -60px;
+    }
+    .commcont p {
+        font-size: 12px;
+        /* padding: 10px 0 10px 0; */
+    }
+}

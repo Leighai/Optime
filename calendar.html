@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/calendar.css" class="css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
-    <title>Optime</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/calendar.css" class="css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="index.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.simple-calendar.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/simple-calendar.css" />
+
+
+  <title>Optime</title>
 
 
 </head>
@@ -27,32 +34,45 @@
     </nav>
 
     <main>
-      <div class="row-1">
-        <h1>Calendar</h1>
-      </div>
+      <h1>Calendar</h1>
 
-      <div class="row-2">
-        <div class="col-1">
-                  <div id="evoCalendar"></div>
+      <div id="container" class="calendar-container"></div>
 
-        </div>
-        <div class="col-2">
-          <div class="box-1">
-            <div>
-              <p>October 4, 2021</p>
-              <p>Habits - COMPLETE</p>
-              <p>Drink water - 2L</p>
-          </div>
-          </div>
-          <div class="box-2">
-            <div>
-              <p>Habits - INPROGRESS</p>
-              <p>Walk dog</p>
-              <p>Meditate</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+              integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+              crossorigin="anonymous"></script>
+      <script src="scripts/jquery.simple-calendar.js"></script>
+      <script>
+        var $calendar;
+        $(document).ready(function () {
+          let container = $("#container").simpleCalendar({
+            fixedStartDay: 0, // begin weeks by sunday
+            disableEmptyDetails: true,
+            events: [
+              // generate new event after tomorrow for one hour
+              {
+                startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+                endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+                summary: 'Visit of the Eiffel Tower'
+              },
+              // generate new event for yesterday at noon
+              {
+                startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
+                endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
+                summary: 'Restaurant'
+              },
+              // generate new event for the last two days
+              {
+                startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
+                endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
+                summary: 'Visit of the Louvre'
+              }
+            ],
+
+          });
+          $calendar = container.data('plugin_simpleCalendar')
+        });
+      </script>
     </main>
 
     <footer>

@@ -38,6 +38,14 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:link {
+    color: black;
+}
+  
+nav ul li a:visited {
+    color: black;
+}
+
 nav img {
     width: 200px;
     /* margin-right: 200px; */
@@ -269,3 +277,14 @@ footer div h2{
     font-size: 48px;
     font-family: 'Playfair Display', serif;
 }
+
+.socialmedia-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 0px;
+  }
+  
+  .socialmedia {
+    width: 35px;
+  }

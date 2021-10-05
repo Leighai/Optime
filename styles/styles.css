@@ -38,13 +38,13 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* a:link {
+nav ul li a:link {
     color: black;
 }
 
-a:visited {
+nav ul li a:visited {
     color: black;
-} */
+}
 
 nav img {
     width: 200px;
@@ -119,17 +119,24 @@ main {
 
 .setup, .checkoff, .seeprogress {
     text-align: center;
-    
+}
+
+.threeheading {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .howitworks {
     display: flex;
     justify-content: space-around;
-    margin: 50px 0px 120px 0px;
+    margin: 20px 0px 120px 0px;
 }
 
-
-
+.howimage {
+    width: 70px;
+    margin: 20px;
+}
 
 /* FOOTER */
 footer {
@@ -154,7 +161,7 @@ footer div h2{
 footer p {
     max-width: 200px;
     font-size: 16px;
-    margin:10px 0 10px 0 ;
+    margin: 10px 0 10px 0 ;
 }
 
 .socialmedia-container {
@@ -178,4 +185,26 @@ footer ul li a {
     color: #FFFFFF;
     font-size: 16px;
     /* color: white; */
+}
+
+@media only screen and (max-width: 600px) {
+    .getstarted {
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+    }
+    .leftimage, .rightimage {
+        width: 220px;
+    }
+
+    .howitworks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .setup, .checkoff, .seeprogress {
+        margin-bottom: 20px;
+    }
+
+
 }

@@ -41,7 +41,7 @@ main {
 }
 
 .habitcont input {
-    width: 70%;
+    width: 80%;
     margin: 5px 0 5px 0;
     padding: 2px;
     box-sizing: border-box;
@@ -51,18 +51,6 @@ main {
     color:rgb(71, 71, 71);
     opacity: 0.8; /* Firefox */
   }
-
-#active {
-    position: absolute;
-    bottom: -60px;
-    right: 0;
-
-    width: 40%;
-    padding: 5px;
-    border: none;
-    border-radius: 15px;
-    background-color: #E8B4FA;
-}
 
 
 /* commitment styling */
@@ -157,7 +145,7 @@ main {
     position: absolute;
     right: 60px;
     bottom: 10px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     background-color: #EFEBDF;
     border-radius: 10px;
     border: none;
@@ -170,4 +158,43 @@ main {
     background-color: #E8B4FA;
     border-radius: 10px;
     border: none;
+}
+
+
+/* mobile version */
+@media screen and (max-width: 600px) {
+    .maincont {
+        padding-bottom: 100px;
+    }
+    
+    .container_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 80%; */
+    }
+
+    .habitcont,
+    .catcont,
+    .commcont {
+        width: 70%;
+        /* margin: 20px;
+        padding: 20px 20px 40px 20px; */
+    }
+    .catimg {
+        width: 35px;
+        height: 35px;
+    }
+    .catimg p{
+        font-size: 10px;
+    }
+    .but_first,
+    .but_second {
+        bottom: -60px;
+    }
+    .commcont p {
+        font-size: 12px;
+        /* padding: 10px 0 10px 0; */
+    }
 }

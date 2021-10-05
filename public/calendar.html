@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/calendar.css" class="css">
-  <link rel="stylesheet" href="styles/styles.css" />
-  <script src="index.js"></script>
+  <link rel="stylesheet" href="./css/calendar.css" class="css">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="./javascripts/index.js"></script>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts/jquery.simple-calendar.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles/simple-calendar.css" />
+  <script type="text/javascript" src="./javascripts/jquery.simple-calendar.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/simple-calendar.css" />
 
 
   <title>Optime</title>
@@ -21,17 +21,17 @@
 </head>
 
 <body class="container">
-    <nav>
-        <div>
-            <img src="public/optimelogo.svg" alt="Optime Logo">
-        </div>
-        <ul>
-            <li><a href="">Sign Up</a></li>
-            <li><a href="">Sign In</a></li>
-            <li><a href="">Habit</a></li>
-            <li><a href="">Calendar</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <div>
+        <a href="index.html"><img src="./images/optimelogo.svg" alt="Optime Logo"></a>
+    </div>
+    <ul>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="addhabit.html">Habit</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+    </ul>
+</nav>
 
     <main>
       <h1>Calendar</h1>
@@ -41,7 +41,7 @@
       <script src="https://code.jquery.com/jquery-2.2.4.min.js"
               integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
               crossorigin="anonymous"></script>
-      <script src="scripts/jquery.simple-calendar.js"></script>
+      <script src="./javascripts/jquery.simple-calendar.js"></script>
       <script>
         var $calendar;
         $(document).ready(function () {
@@ -79,11 +79,11 @@
         <div>
             <h2>Optime</h2>
             <p>Become a better you by staying on track everyday with Optime!</p>
-            <div>
-                <img src="">
-                <img src="">
-                <img src="">
-            </div>
+            <div class="socialmedia-container">
+              <a href="https://www.instagram.com/" target="_blank"><img class="socialmedia" src="./images/instagram(colour).png"></a>
+              <a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="./images/facebook(colour).png"></a>
+              <a href="https://www.twitter.com/" target="_blank"><img class="socialmedia" src="./images/twitter(colour).png"></a>
+          </div>
         </div>
         <ul>
             <li><a href="">Contact Us</a></li>

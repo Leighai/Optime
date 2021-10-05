@@ -7,12 +7,12 @@
     <title>Optime</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/styles.css" class="css">
-    <link rel="stylesheet" href="styles/addhabit.css" class="css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./javascripts/addhabit.css" class="css">
     
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     
-    <script src="scripts/addhabit.js"></script>
+    <script src="./javascripts/addhabit.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -36,13 +36,13 @@
 <body class="container">
     <nav>
         <div>
-            <img src="public/optimelogo.svg" alt="Optime Logo">
+            <a href="index.html"><img src="./images/optimelogo.svg" alt="Optime Logo"></a>
         </div>
         <ul>
-            <li><a href="">Sign Up</a></li>
-            <li><a href="">Sign In</a></li>
-            <li><a href="">Habit</a></li>
-            <li><a href="">Calendar</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+            <li><a href="addhabit.html">Habit</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
         </ul>
     </nav>
 
@@ -64,38 +64,38 @@
                     <h3>Category</h3>
                     <div>
                         <div class="cat">
-                            <div class="catimg" onclick="catButton()">
-                                <img src="public/health.png" />
+                            <div class="catimg" id="health" onclick="healthButton()">
+                                <img src="./images/health.png" />
                                 <p>Health</p>
                             </div>
-                            <div class="catimg">
-                                <img src="public/fitness.png" />
+                            <div class="catimg" id="fitness" onclick="fitButton()">
+                                <img src="./images/fitness.png" />
                                 <p>Fitness</p>
                             </div>
-                            <div class="catimg">
-                                <img src="public/learn.png" />
+                            <div class="catimg" id="learn" onclick="learnButton()">
+                                <img src="./images/learn.png" />
                                 <p>Learn</p>
                             </div>
-                            <div class="catimg">
-                                <img src="public/sustainability.png" />
-                                <p>sustainability</p>
+                            <div class="catimg" id="sus" onclick="susButton()">
+                                <img src="./images/sustainability.png" />
+                                <p>Sustainability</p>
                             </div>
                         </div>
                         <div class="cat">
-                            <div class="catimg">
-                                <img src="public/home.png" />
+                            <div class="catimg" id="house" onclick="houseButton()">
+                                <img src="./images/home.png" />
                                 <p>House & Pet</p>
                             </div>
-                            <div class="catimg">
-                                <img src="public/relax.png" />
+                            <div class="catimg" id="relax" onclick="relaxButton()">
+                                <img src="./images/relax.png" />
                                 <p>Relaxation</p>
                             </div>
-                            <div class="catimg">
-                                <img src="public/family.png" />
+                            <div class="catimg" id="family" onclick="famButton()">
+                                <img src="./images/family.png" />
                                 <p>Family</p>
                             </div>
-                            <div class="catimg">
-                                <img src="public/finance.png" />
+                            <div class="catimg" id="finance" onclick="finButton()">
+                                <img src="./images/finance.png" />
                                 <p>Finance</p>
                             </div>
                         </div>
@@ -125,10 +125,10 @@
         <div>
             <h2>Optime</h2>
             <p>Become a better you by staying on track everyday with Optime!</p>
-            <div>
-                <img src="">
-                <img src="">
-                <img src="">
+            <div class="socialmedia-container">
+                <a href="https://www.instagram.com/" target="_blank"><img class="socialmedia" src="./images/instagram(colour).png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="./images/facebook(colour).png"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img class="socialmedia" src="./images/twitter(colour).png"></a>
             </div>
         </div>
         <ul>

@@ -1,6 +1,7 @@
 *, html {
     margin: 0;
     font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
 }
 
 .container {
@@ -9,9 +10,9 @@
     min-height: 100vh;
     justify-content: center;
     flex-direction: column;
-
 }
 
+/* Header */
 
 nav {
     display: flex;
@@ -24,8 +25,6 @@ nav {
 nav ul {
     /* flex: 3; */
     text-align: center;
-
-    
 }
 
 ul li {
@@ -51,6 +50,8 @@ nav img {
     /* margin-right: 200px; */
     display: absolute;
 }
+
+/* Body */
 
 main {
     flex: 2;

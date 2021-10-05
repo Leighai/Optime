@@ -1,3 +1,45 @@
+/* Header */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px 10px 20px;
+}
+
+nav ul {
+    /* flex: 3; */
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 30px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:link {
+    color: black;
+}
+
+nav ul li a:visited {
+    color: black;
+}
+
+nav img {
+    width: 200px;
+/* margin-right: 200px; */
+    display: absolute;
+}
+
+/* Body */
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -198,3 +240,52 @@ main {
         /* padding: 10px 0 10px 0; */
     }
 }
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    background-color: black;
+    flex-grow: 1;
+    color: #ffffff;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  footer ul {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  footer div {
+    margin: 20px;
+    text-align: left;
+  }
+
+  footer p {
+    max-width: 200px;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+  }
+  
+  footer div h2 {
+    font-size: 48px;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .socialmedia-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 0px;
+  }
+  
+  .socialmedia {
+    width: 35px;
+  }

@@ -1,0 +1,149 @@
+*,
+html {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 20px 10px 20px;
+}
+
+nav ul {
+  /* flex: 3; */
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 30px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav img {
+  width: 200px;
+  /* margin-right: 200px; */
+  display: absolute;
+}
+
+main {
+  flex: 3;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  flex-grow: 1;
+  color: #ffffff;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer div {
+  margin: 20px;
+  text-align: left;
+}
+footer p {
+  max-width: 200px;
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+
+footer div h2 {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main .color {
+  position: absolute;
+  filter: blur(150px);
+}
+
+.box {
+  display: flex;
+  width: 500px;
+  min-height: 500px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cont h1 {
+  margin-bottom: 60px;
+}
+
+.form p {
+  margin-top: 20px;
+}
+.form .input-box {
+  width: 80%;
+  margin-top: 20px;
+  border: 1px solid rgba(223, 220, 220, 0.5);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#but {
+  background-color: #e8b4fa;
+  cursor: pointer;
+}
+main div img {
+  width: 50%;
+  height: 50%;
+}
+
+.img-cont {
+  background: #efebdf;
+  width: 400px;
+  min-height: 130vh;
+  position: absolute;
+  right: 0;
+  top: -200px;
+  z-index: -1;
+  border-end-start-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

@@ -53,49 +53,50 @@ main {
   flex: 3;
 }
 
+/* FOOTER */
 footer {
-  display: flex;
-  background-color: black;
-  flex-grow: 1;
-  color: #ffffff;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-footer ul {
-  display: flex;
-  flex-direction: column;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #ffffff;
+    display: flex;
+    background-color: black;
+    flex-grow: 1;
+    color: #FFFFFF;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 footer div {
-  margin: 20px;
-  text-align: left;
+    margin: 20px;
+    text-align:left;
 }
+
+footer div h2{
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+}
+
 footer p {
-  max-width: 200px;
-  font-size: 20px;
-  margin: 10px 0 10px 0;
+    max-width: 200px;
+    font-size: 16px;
+    margin: 10px 0 10px 0 ;
 }
 
-footer div h2 {
-  font-size: 48px;
-  font-family: "Playfair Display", serif;
-}
-
-.socialmedia-container{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-left: 0px;
+.socialmedia-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 0px;
 }
 
 .socialmedia {
-  width: 35px;
+    width: 35px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li {
+    font-size: 16px;
 }
 
 main {
@@ -113,7 +114,8 @@ main .color {
 .box {
   display: flex;
   width: 500px;
-  min-height: 500px;
+  height: 750px;
+  margin: 50px 0px 100px 0px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
   justify-content: center;
@@ -136,17 +138,37 @@ main .color {
 .form p {
   margin-top: 20px;
 }
+
+.form h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .form .input-box {
-  width: 80%;
+  width: 250px;
+  height: 30px;
   margin-top: 20px;
   border: 1px solid rgba(223, 220, 220, 0.5);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 20px 0px;
 }
 #but {
   background-color: #e8b4fa;
   cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
 }
 main div img {
   width: 70%;
@@ -175,12 +197,19 @@ main div img {
   z-index: -8;
 }
 
-@media only screen and (max-width: 700px) {
-  nav ul {
+@media only screen and (max-width: 600px) {
+  /* nav ul {
     width: 100%;
     position: absolute;
     top: 75px;
     right: 0;
     z-index: 2;
+  } */
+
+  .color-cont {
+    height: 500px;
   }
-} ;
+  .img-cont {
+    display: none;
+  }
+};

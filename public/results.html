@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/results.css" class="css">
+    <link rel="stylesheet" href="./css/results.css" class="css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="index.js"></script>
+
+    <!-- <script type="text/javascript" src="./data/user.json"></script> -->
+    <script src="javascripts/result.js"></script>
+
     <title>Optime</title>
 </head>
 
@@ -14,7 +18,7 @@
     <!-- Header -->
     <nav>
         <div>
-            <a href="index.html"><img src="public/optimelogo.svg" alt="Optime Logo"></a>
+            <a href="index.html"><img src="./images/optimelogo.svg" alt="Optime Logo"></a>
         </div>
         <ul>
             <li><a href="signup.html">Sign Up</a></li>
@@ -37,14 +41,15 @@
             <button class="date">25<br>SA</button>
             <button class="date">26<br>SU</button>
         </div>
-        <div class="habits">
+
+        <div class="habits" id="ex" style="visibility:hidden">
             <button id="drinkwater" class="habit_btn">
-                <img src="public/reminders.png" class="icon" alt="Drink Water"/>Drink Water
+                <img src="./images/reminders.png" class="icon" alt="Drink Water"/>Drink Water
             </button>
             <button id="walkdog" class="habit_btn">
-                <img src="public/family.png" class="icon" alt="Walk Dog"/>Walk Dog
+                <img src="./images/family.png" class="icon" alt="Walk Dog"/>Walk Dog
             </button>
-            <button id="stand" class="habit_btn">
+            <!-- <button id="stand" class="habit_btn">
                 <img src="public/check.png" class="icon" alt="Stand"/>Stand
             </button>
             <button id="cook" class="habit_btn">
@@ -58,8 +63,9 @@
             </button>
             <button id="exercise" class="habit_btn">
                 <img src="public/fitness.png" class="icon" alt="Exercise"/>Exercise
-            </button>
+            </button> -->
         </div>
+        <div id="test"></div>
     </main>
 
     <!-- Footer -->
@@ -68,11 +74,12 @@
             <h2>Optime</h2>
             <p>Become a better you by staying on track everyday with Optime!</p>
             <div class="socialmedia-container">
-                <a href="https://www.instagram.com/" target="_blank"><img class="socialmedia" src="public/instagram(colour).png"></a>
-                <a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="public/facebook(colour).png"></a>
-                <a href="https://www.twitter.com/" target="_blank"><img class="socialmedia" src="public/twitter(colour).png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="socialmedia" src="./images/instagram(colour).png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img class="socialmedia" src="./images/facebook(colour).png"></a>
+                <a href="https://www.twitter.com/" target="_blank"><img class="socialmedia" src="./images/twitter(colour).png"></a>
             </div>
         </div>
+
         <ul class="footerlist">
             <li>Contact Us</li>
             <li>Careers</li>

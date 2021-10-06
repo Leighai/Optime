@@ -8,6 +8,8 @@ function healthButton() {
     health.style.borderRadius = "50%";
     health.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
     health.style.padding = "15px"
+
+    return true;
     
 }
 
@@ -65,39 +67,147 @@ function houseButton() {
 
 function relaxButton() {
 
-    var health = document.getElementById("health");
+    var relax = document.getElementById("relax");
 
-    health.style.backgroundColor = "#CCEBF2";
-    health.style.width = "40px";
-    health.style.height = "40px";
-    health.style.borderRadius = "50%";
-    health.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    health.style.padding = "15px"
+    relax.style.backgroundColor = "#F9F3C5";
+    relax.style.width = "40px";
+    relax.style.height = "40px";
+    relax.style.borderRadius = "50%";
+    relax.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+    relax.style.padding = "15px"
     
 }
 
 function famButton() {
 
-    var health = document.getElementById("health");
+    var family = document.getElementById("family");
 
-    health.style.backgroundColor = "#CCEBF2";
-    health.style.width = "40px";
-    health.style.height = "40px";
-    health.style.borderRadius = "50%";
-    health.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    health.style.padding = "15px"
+    family.style.backgroundColor = "#F6E4B0";
+    family.style.width = "40px";
+    family.style.height = "40px";
+    family.style.borderRadius = "50%";
+    family.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+    family.style.padding = "15px"
     
 }
 
 function finButton() {
 
-    var health = document.getElementById("health");
+    var finance = document.getElementById("finance");
 
-    health.style.backgroundColor = "#CCEBF2";
-    health.style.width = "40px";
-    health.style.height = "40px";
-    health.style.borderRadius = "50%";
-    health.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    health.style.padding = "15px"
+    finance.style.backgroundColor = "#D1D9ED";
+    finance.style.width = "40px";
+    finance.style.height = "40px";
+    finance.style.borderRadius = "50%";
+    finance.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+    finance.style.padding = "15px"
     
 }
+
+
+
+
+function resetButton() {
+    document.getElementById("title").value = null;
+    document.getElementById("details").value = null;
+
+    document.getElementById("health").style.backgroundColor = null;
+    document.getElementById("health").style.boxShadow = null;
+    document.getElementById("health").style.width = "50px";
+    document.getElementById("health").style.height = "50px";
+
+    document.getElementById("learn").style.backgroundColor = null;
+    document.getElementById("learn").style.boxShadow = null;
+    document.getElementById("learn").style.width = "50px";
+    document.getElementById("learn").style.height = "50px";
+
+    document.getElementById("fitness").style.backgroundColor = null;
+    document.getElementById("fitness").style.boxShadow = null;
+    document.getElementById("fitness").style.width = "50px";
+    document.getElementById("fitness").style.height = "50px";
+
+    document.getElementById("sus").style.backgroundColor = null;
+    document.getElementById("sus").style.boxShadow = null;
+    document.getElementById("sus").style.width = "50px";
+    document.getElementById("sus").style.height = "50px";
+
+    document.getElementById("house").style.backgroundColor = null;
+    document.getElementById("house").style.boxShadow = null;
+    document.getElementById("house").style.width = "50px";
+    document.getElementById("house").style.height = "50px";
+
+    document.getElementById("house").style.backgroundColor = null;
+    document.getElementById("house").style.boxShadow = null;
+    document.getElementById("house").style.width = "50px";
+    document.getElementById("house").style.height = "50px";
+
+    document.getElementById("relax").style.backgroundColor = null;
+    document.getElementById("relax").style.boxShadow = null;
+    document.getElementById("relax").style.width = "50px";
+    document.getElementById("relax").style.height = "50px";
+
+    document.getElementById("family").style.backgroundColor = null;
+    document.getElementById("family").style.boxShadow = null;
+    document.getElementById("family").style.width = "50px";
+    document.getElementById("family").style.height = "50px";
+
+    document.getElementById("finance").style.backgroundColor = null;
+    document.getElementById("finance").style.boxShadow = null;
+    document.getElementById("finance").style.width = "50px";
+    document.getElementById("finance").style.height = "50px";
+
+    document.getElementById("amount").value = "2";
+    // document.getElementById("slide").value = "2";
+}
+
+function passData() {
+    let makebox = document.createElement("button");
+    makebox.value = "";
+    makebox.style.backgroundColor = "#CCEBF2";
+    makebox.style.border = "2px solid black";
+    makebox.style.borderRadius = "8px";
+    makebox.style.margin = "20px";
+    makebox.style.minWidth = "400px";
+    makebox.style.height = "80px";
+    makebox.style.display = "flex";
+    makebox.style.alignItems = "center";
+
+    document.getElementById('ex').appendChild(makebox)
+}
+// window.onload = myFunction
+
+// function myFunction() {
+    
+//     var health = document.getElementById("health");
+//     var fit = document.getElementById("fitness");
+//     var learn = document.getElementById("learn");
+//     var sus = document.getElementById("sus");
+//     var house = document.getElementById("house");
+//     var relax = document.getElementById("relax");
+//     var family = document.getElementById("family");
+//     var finance = document.getElementById("finance");
+
+    
+
+//     if(health.onclick) {
+//         health.style.backgroundColor = "#CCEBF2";
+//         fit.style.backgrounColor = "#fff";
+//         learn.style.backgroundColor = "#fff";
+//         sus.style.backgroundColor = "#fff";
+//         house.style.backgroundColor = "#fff";
+//         relax.style.backgroundColor = "#fff";
+//         family.style.backgroundColor = "#fff";
+//         finance.style.backgroundColor = "#fff";
+//     }
+//     else if(fit.onclick) {
+//         health.style.backgroundColor = "#fff";
+//         fit.style.backgrounColor = "#CCEBF2";
+//         learn.style.backgroundColor = "#fff";
+//         sus.style.backgroundColor = "#fff";
+//         house.style.backgroundColor = "#fff";
+//         relax.style.backgroundColor = "#fff";
+//         family.style.backgroundColor = "#fff";
+//         finance.style.backgroundColor = "#fff";
+//     }
+// }
+

@@ -391,6 +391,23 @@ main {
 
 /* mobile version */
 @media screen and (max-width: 600px) {
+    body nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav div img {
+        width: 180px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        font-size: 18px;
+        display: flex;
+    }
+    
     .maincont {
         padding-bottom: 100px;
     }

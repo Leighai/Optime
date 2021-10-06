@@ -197,16 +197,33 @@ main div img {
 }
 
 @media only screen and (max-width: 600px) {
-  .img-cont {
-    display: none;
+  body nav {
+    display: flex;
+    flex-direction: column;
   }
-
-  .color-cont {
-    height: 500px;
+  nav div img {
+      width: 180px;
+  }
+  nav ul {
+      display: flex;
+      flex-direction: row;
   }
 
   nav ul li {
-    display: inline-block;
+      font-size: 18px;
+      display: flex;
   }
-  
-}
+    .img-cont {
+      display: none;
+    }
+
+    .color-cont {
+      height: 400px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-bottom: -20px;
+    }
+    
+  }

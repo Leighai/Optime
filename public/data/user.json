@@ -1,0 +1,23 @@
+{
+    "user1": {
+        "email": "abc@gmail.com",
+        "password": "1234",
+        "habit": {
+            "category": "Health",
+            "title": "Hydrate",
+            "detail": "Drink 2L water",
+            "commitment": 1
+        }
+    },
+    "user2": {
+        "email": "def@gmail.com",
+        "password": "1234",
+        "habit": {
+            "category": "Home and Pet",
+            "title": "Walk Dog",
+            "detail": "Go for walk with dog for 30min",
+            "commitment": 2
+        }
+    }
+
+}

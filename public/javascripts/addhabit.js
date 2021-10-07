@@ -222,13 +222,29 @@ function Handler(){
                 
                 // }
 
-            let img_src = document.getElementsByClassName('catimg').src; 
-               
+            function pickImg(el) {
+                document.querySelectorAll(".catimg > img").forEach(el=>{
+                    el.src = allimg
+
+                    for( let i = 0; i < allimg.length; i++) {
+                
+                            alert(this.src);
+                        
+                    }
+                })
+            }
+            // let img_src = document.querySelector('.catimg > img').src; 
+            let allimg = document.querySelector('.catimg > img')
+
+
+
+            // console.log(img_src);
+
 
             let new_img = document.createElement('img');
             new_img.classList.add('icon');
             // new_img.id = img_id;
-            new_img.setAttribute('src',img_src);
+            new_img.setAttribute('src',pickImg(el));
             new_but.appendChild(new_img);
 
 

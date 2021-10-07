@@ -1,17 +1,19 @@
-function healthButton() {
+statusCheck = null
 
-    var health = document.getElementById("health");
+// function healthButton() {
 
-    health.style.backgroundColor = "#CCEBF2";
-    health.style.width = "40px";
-    health.style.height = "40px";
-    health.style.borderRadius = "50%";
-    health.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    health.style.padding = "15px"
+//     var health = document.getElementById("health");
 
-    return true;
+//     health.style.backgroundColor = "#CCEBF2";
+//     health.style.width = "40px";
+//     health.style.height = "40px";
+//     health.style.borderRadius = "50%";
+//     health.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+//     health.style.padding = "15px"
+
+//     return true;
     
-}
+// }
 
 function fitButton() {
 
@@ -23,86 +25,88 @@ function fitButton() {
     fit.style.borderRadius = "50%";
     fit.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
     fit.style.padding = "15px"
+
+    statusCheck = !null
     
 }
 
-function learnButton() {
+// function learnButton() {
 
-    var learn = document.getElementById("learn");
+//     var learn = document.getElementById("learn");
 
-    learn.style.backgroundColor = "#EEDBF3";
-    learn.style.width = "40px";
-    learn.style.height = "40px";
-    learn.style.borderRadius = "50%";
-    learn.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    learn.style.padding = "15px"
+//     learn.style.backgroundColor = "#EEDBF3";
+//     learn.style.width = "40px";
+//     learn.style.height = "40px";
+//     learn.style.borderRadius = "50%";
+//     learn.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+//     learn.style.padding = "15px"
     
-}
+// }
 
-function susButton() {
+// function susButton() {
 
-    var sus = document.getElementById("sus");
+//     var sus = document.getElementById("sus");
 
-    sus.style.backgroundColor = "#E3F5D0";
-    sus.style.width = "40px";
-    sus.style.height = "40px";
-    sus.style.borderRadius = "50%";
-    sus.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    sus.style.padding = "15px"
+//     sus.style.backgroundColor = "#E3F5D0";
+//     sus.style.width = "40px";
+//     sus.style.height = "40px";
+//     sus.style.borderRadius = "50%";
+//     sus.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+//     sus.style.padding = "15px"
     
-}
+// }
 
-function houseButton() {
+// function houseButton() {
 
-    var house = document.getElementById("house");
+//     var house = document.getElementById("house");
 
-    house.style.backgroundColor = "#FEE4DE";
-    house.style.width = "40px";
-    house.style.height = "40px";
-    house.style.borderRadius = "50%";
-    house.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    house.style.padding = "15px"
+//     house.style.backgroundColor = "#FEE4DE";
+//     house.style.width = "40px";
+//     house.style.height = "40px";
+//     house.style.borderRadius = "50%";
+//     house.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+//     house.style.padding = "15px"
     
-}
+// }
 
-function relaxButton() {
+// function relaxButton() {
 
-    var relax = document.getElementById("relax");
+//     var relax = document.getElementById("relax");
 
-    relax.style.backgroundColor = "#F9F3C5";
-    relax.style.width = "40px";
-    relax.style.height = "40px";
-    relax.style.borderRadius = "50%";
-    relax.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    relax.style.padding = "15px"
+//     relax.style.backgroundColor = "#F9F3C5";
+//     relax.style.width = "40px";
+//     relax.style.height = "40px";
+//     relax.style.borderRadius = "50%";
+//     relax.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+//     relax.style.padding = "15px"
     
-}
+// }
 
-function famButton() {
+// function famButton() {
 
-    var family = document.getElementById("family");
+//     var family = document.getElementById("family");
 
-    family.style.backgroundColor = "#F6E4B0";
-    family.style.width = "40px";
-    family.style.height = "40px";
-    family.style.borderRadius = "50%";
-    family.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    family.style.padding = "15px"
+//     family.style.backgroundColor = "#F6E4B0";
+//     family.style.width = "40px";
+//     family.style.height = "40px";
+//     family.style.borderRadius = "50%";
+//     family.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+//     family.style.padding = "15px"
     
-}
+// }
 
-function finButton() {
+// function finButton() {
 
-    var finance = document.getElementById("finance");
+//     var finance = document.getElementById("finance");
 
-    finance.style.backgroundColor = "#D1D9ED";
-    finance.style.width = "40px";
-    finance.style.height = "40px";
-    finance.style.borderRadius = "50%";
-    finance.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
-    finance.style.padding = "15px"
+//     finance.style.backgroundColor = "#D1D9ED";
+//     finance.style.width = "40px";
+//     finance.style.height = "40px";
+//     finance.style.borderRadius = "50%";
+//     finance.style.boxShadow = "5px 5px 4px rgba(0, 0, 0, 0.25)"
+//     finance.style.padding = "15px"
     
-}
+// }
 
 
 
@@ -173,6 +177,7 @@ function passData() {
     makebox.style.alignItems = "center";
 
     document.getElementById('ex').appendChild(makebox)
+
 }
 // window.onload = myFunction
 
@@ -210,4 +215,56 @@ function passData() {
 //         finance.style.backgroundColor = "#fff";
 //     }
 // }
+
+let input = document.getElementById('title');
+let btn = document.querySelector('#save-btn');
+let li = document.querySelector('#ex');
+let el = document.getElementsByTagName('button');
+let form = document.getElementById('new-task-form');
+let append = document.getElementById('ex');
+let sliceValue = document.getElementById('amount').value;
+
+
+function Handler(){
+    const task = input.value;
+    if(!task){
+        alert('Fill the title please!');
+    }else{
+        if(statusCheck != null){
+
+            let new_but = document.createElement('button');
+            new_but.classList.add('habit_btn');
+            new_but.id = "drinkwater";
+            new_but.innerText = task;
+            append.appendChild(new_but);
+
+            let new_img = document.createElement('img');
+            new_img.classList.add('icon')
+            new_img.src = "./images/fitness.png";
+            new_but.appendChild(new_img);
+
+            let slice = document.createElement('div');
+            slice.
+
+            console.log(new_but)
+            statusCheck = null
+            }
+        
+    }
+
+}
+
+
+let habits = document.querySelectorAll('.cat');
+myValue = document.getElementById('amount').value
+
+habits.forEach(cat => {
+    cat.addEventListener('click', ()=>{
+        
+})
+})
+// localStorage.setItem("commitment-1", $( "#slider-range-max" ).slider( "value" ))
+// localStorage.setItem("asdas", 'awdadg')
+// document.getElementById("ex").innerHTML = localStorage.getItem("commitment-1");
+
 

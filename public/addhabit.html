@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     
-    <script src="./javascripts/addhabit.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -113,7 +112,8 @@
                 <div class="butcont">
                     <div>
                         <button class="but_first" onclick="resetButton()">RESET</button>
-                        <button class="but_second" onclick="passData()">SAVE</button>
+                        <!-- <button class="but_second" onclick="passData()">SAVE</button> -->
+                        <button onclick="Handler()" class="but_second" id="save-btn">SAVE</button>
                     </div>
                 </div>
             </div>
@@ -125,12 +125,12 @@
             </div>
     
             <div class="habits" id="ex">
-                <!-- <button id="drinkwater" class="habit_btn">
+                <button id="drinkwater" class="habit_btn">
                     <img src="./images/reminders.png" class="icon" alt="Drink Water"/>Drink Water
                 </button>
                 <button id="walkdog" class="habit_btn">
                     <img src="./images/family.png" class="icon" alt="Walk Dog"/>Walk Dog
-                </button> -->
+                </button>
                 <!-- <button id="stand" class="habit_btn">
                     <img src="public/check.png" class="icon" alt="Stand"/>Stand
                 </button>
@@ -148,6 +148,10 @@
                 </button> -->
             </div>
         </div>
+
+
+
+        
     </main>
 
     <footer>
@@ -172,6 +176,8 @@
             <li>@2021 Optime</li>
         </ul>
     </footer>
+
+    <script src="./javascripts/addhabit.js"></script>
 
 </body>
 </html>

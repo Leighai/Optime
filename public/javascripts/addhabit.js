@@ -182,12 +182,61 @@ function Handler(){
             
             let img_src = document.getElementsByClassName('catimg').src; 
 
+            // var img_src = [
+            //     '../images/health.png',
+            //     '../images/fitness.png',
+            //     '../images/learn.pnp',
+            //     '../images/sustainabiliy.png',
+            //     '../images/home.png',
+            //     '../images/relax.png',
+            //     '../images/family.png',
+            //     '../images/finance.png'
+            // ];
+
+            // var img_id = [
+            //     // 'health',
+            //     // 'fitness',
+            //     // 'learn',
+            //     // 'sustainability',
+            //     // 'home',
+            //     // 'relax',
+            //     // 'family',
+            //     // 'finance'
+            // ];
+
+
+            // for (let i = 0; i < images.length; i++) {
+                // const img = document.createElement('img');
+                // img.classList.add('icon');
+                // img.setAttribute('src',images[i]);
+                
+                // }
+
+            function pickImg(el) {
+                document.querySelectorAll(".catimg > img").forEach(el=>{
+                    el.src = allimg
+
+                    for( let i = 0; i < allimg.length; i++) {
+                
+                            alert(this.src);
+                        
+                    }
+                })
+            }
+            // let img_src = document.querySelector('.catimg > img').src; 
+            let allimg = document.querySelector('.catimg > img')
+
+
+
+            // console.log(img_src);
 
 
             let new_img = document.createElement('img');
             new_img.classList.add('icon');
             new_img.setAttribute('src',img_src);
             new_img.id = "new";
+            // new_img.id = img_id;
+            new_img.setAttribute('src',pickImg(el));
             new_but.appendChild(new_img);
 
 

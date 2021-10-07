@@ -54,6 +54,8 @@ main {
   background-color: #efebdf;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
 

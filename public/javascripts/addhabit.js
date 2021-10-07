@@ -1,4 +1,3 @@
-
 // fitCheck = null
 
 // var fitness = document.getElementById('fitness');
@@ -131,7 +130,6 @@ function passData() {
     makebox.style.alignItems = "center";
 
     document.getElementById('ex').appendChild(makebox)
-
 }
 
 let input = document.getElementById('title');
@@ -143,22 +141,11 @@ let append = document.getElementById('ex');
 
 
 function Handler(){
-
+    let slideValue = document.getElementById('amount').value
     var info = document.getElementById('title').value 
 
     const task = info;
-    // const images = [
-    //     '../images/health.png',
-    //     '../images/fitness.png',
-    //     '../images/learn.pnp',
-    //     '../images/sustainabiliy.png',
-    //     '../images/home.png',
-    //     '../images/relax.png',
-    //     '../images/family.png',
-    //     '../images/finance.png'
-    // ]
 
-    // let selectedImage = null;
 
     if(!task) {
         alert('Fill the title please!');
@@ -189,125 +176,72 @@ function Handler(){
             let new_but = document.createElement('button');
             new_but.classList.add('habit_btn');
             new_but.innerText = task;
-            // new_but.id = "task_btn" 
             append.appendChild(new_but);
 
 
-            // var img_src = [
-            //     '../images/health.png',
-            //     '../images/fitness.png',
-            //     '../images/learn.pnp',
-            //     '../images/sustainabiliy.png',
-            //     '../images/home.png',
-            //     '../images/relax.png',
-            //     '../images/family.png',
-            //     '../images/finance.png'
-            // ];
-
-            // var img_id = [
-            //     // 'health',
-            //     // 'fitness',
-            //     // 'learn',
-            //     // 'sustainability',
-            //     // 'home',
-            //     // 'relax',
-            //     // 'family',
-            //     // 'finance'
-            // ];
-
-
-            // for (let i = 0; i < images.length; i++) {
-                // const img = document.createElement('img');
-                // img.classList.add('icon');
-                // img.setAttribute('src',images[i]);
-                
-                // }
-
+            
             let img_src = document.getElementsByClassName('catimg').src; 
-               
+
+
 
             let new_img = document.createElement('img');
             new_img.classList.add('icon');
-            // new_img.id = img_id;
             new_img.setAttribute('src',img_src);
+            new_img.id = "new";
             new_but.appendChild(new_img);
 
 
-            let images = document.getElementsByClassName('icon');
+            // let images = document.getElementsByClassName('icon');
+            
+            // document.addEventListener("click",function(event){
+            //     if(event.target.classList.contains("catimg")){
+            //         images.src = event.target.src;
+            
+            //     }
+            // })
 
-            document.addEventListener("click",function(event){
-                if(event.target.classList.contains("catimg")){
-                    images.src = event.target.src;
-                }
-            })
+     
+
+            let progress = document.createElement('p');
+            progress.innerText = "0/";
+            progress.id = 'progress'
+            new_but.appendChild(progress)
+
+            let time = document.createElement('p');
+            time.innerText = slideValue;
+            time.id = "time"
+            new_but.appendChild(time)
+
+            let del = document.createElement('p');
+            del.innerText = "DELETE";
+            del.id = "delete"
+            new_but.appendChild(del)
+
+            del.addEventListener('click',()=>{
+                append.removeChild(new_but)
+            } )
 
 
-           
           console.log(new_img)
+            
         
         }
 
-}
 
-
-// let habits = document.querySelectorAll('.catimg');
-//     habits.forEach(cat => {
-//         cat.addEventListener('click', ()=>{
-//         cat.classList.toggle('clicked')
-        
-//     })
-// })
-
-
-let input = document.getElementById('title');
-let btn = document.querySelector('#save-btn');
-let li = document.querySelector('#ex');
-let el = document.getElementsByTagName('button');
-let form = document.getElementById('new-task-form');
-let append = document.getElementById('ex');
-let sliceValue = document.getElementById('amount').value;
-
-
-function Handler(){
-    const task = input.value;
-    if(!task){
-        alert('Fill the title please!');
-    }else{
-        if(statusCheck != null){
-
-            let new_but = document.createElement('button');
-            new_but.classList.add('habit_btn');
-            new_but.id = "drinkwater";
-            new_but.innerText = task;
-            append.appendChild(new_but);
-
-            let new_img = document.createElement('img');
-            new_img.classList.add('icon')
-            new_img.src = "./images/fitness.png";
-            new_but.appendChild(new_img);
-
-            let slice = document.createElement('div');
-            slice.
-
-            console.log(new_but)
-            statusCheck = null
-            }
-        
-    }
+       
+                       
 
 }
+// let img = document.querySelectorAll('#new')
+// for(let i=0; i < img.length; i++){
+//     img.onclick = function (i){
+//         alert(this)
+//     }
+// }
 
-
-let habits = document.querySelectorAll('.cat');
-myValue = document.getElementById('amount').value
-
+let habits = document.querySelectorAll('.catimg');
 habits.forEach(cat => {
     cat.addEventListener('click', ()=>{
-        
+    alert(this.classList)
 })
 })
-// localStorage.setItem("commitment-1", $( "#slider-range-max" ).slider( "value" ))
-// localStorage.setItem("asdas", 'awdadg')
-// document.getElementById("ex").innerHTML = localStorage.getItem("commitment-1");
-
-

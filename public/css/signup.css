@@ -236,13 +236,22 @@ main div img {
 
 
 @media only screen and (max-width: 600px) {
-  /* nav ul {
-    width: 100%;
-    position: absolute;
-    top: 75px;
-    right: 0;
-    z-index: 2;
-  } */
+  body nav {
+    display: flex;
+    flex-direction: column;
+}
+nav div img {
+    width: 180px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    font-size: 18px;
+    display: flex;
+}
 
   .color-cont {
     height: 500px;

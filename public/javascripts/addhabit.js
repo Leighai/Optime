@@ -202,6 +202,13 @@ function Handler(){
             
             new_but.appendChild(new_img);
 
+                        let new_img = document.createElement('img');
+                        new_img.classList.add('icon');
+                        // new_img.id = img_id;
+                        new_img.setAttribute('src',newImg);
+                        new_but.appendChild(new_img);
+                    }
+                    
 
             // let images = document.getElementsByClassName('icon');
             
@@ -243,7 +250,7 @@ function Handler(){
        
                        
 
-}
+
 // let img = document.querySelectorAll('#new')
 // for(let i=0; i < img.length; i++){
 //     img.onclick = function (i){

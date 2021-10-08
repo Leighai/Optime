@@ -1,4 +1,3 @@
-
 // fitCheck = null
 
 // var fitness = document.getElementById('fitness');
@@ -142,105 +141,66 @@ let append = document.getElementById('ex');
 
 
 function Handler(){
-
+    let slideValue = document.getElementById('amount').value
     var info = document.getElementById('title').value 
 
-    const task = info;
-    // const images = [
-    //     '../images/health.png',
-    //     '../images/fitness.png',
-    //     '../images/learn.pnp',
-    //     '../images/sustainabiliy.png',
-    //     '../images/home.png',
-    //     '../images/relax.png',
-    //     '../images/family.png',
-    //     '../images/finance.png'
-    // ]
 
-    // let selectedImage = null;
+
+    const task = info;
+
 
     if(!task) {
         alert('Fill the title please!');
         } else {
-            // if(fitCheck != null){
-
-            //     let new_div = document.createElement('div');
-            //     new_div.classList.add('habit_btn');
-            //     append.appendChild(new_div);
-                
-            //     let new_img = document.createElement('img');
-            //     new_img.classList.add('icon')
-            //     new_img.src = "./images/fitness.png";
-            //     new_div.appendChild(new_img);
-
-            //     let new_but = document.createElement('p');
-            //     // new_but.classList.add('habit_btn');
-            //     new_but.id = "drinkwater";
-            //     new_but.innerText = task;
-            //     new_img.appendChild(new_but);
-
-                
-
-            //     console.log(new_but)
-            //     fitCheck = null
-            // }
 
             let new_but = document.createElement('button');
             new_but.classList.add('habit_btn');
             new_but.innerText = task;
-            // new_but.id = "task_btn" 
             append.appendChild(new_but);
 
 
             
-            
-            
-            
-            // for (let i = 0; i < images.length; i++) {
-                //     const img = document.createElement('img');
-                //     img.classList.add('icon');
-                //     img.setAttribute('src',images[i]);
-                
-                //     }
-                
-                //     document.querySelectorAll(".catimg").forEach(el=>{
-                    //         el.style.backgroundColor = "#fff";
-                    //     });
-                    
-                    function pickImg(el) {
-                        document.querySelectorAll(".catimg > img").forEach(el=>{
-                            el.src = allimg
-                            
-                            for( let i = 0; i < allimg.length; i++) {
-                                
-                                alert(this.src);
-                                
-                            }
-                        })
-                    }
-                    // let img_src = document.querySelector('.catimg > img').src; 
-                    // let allimg = document.querySelector('.catimg > img')
-                    
-                    
-                    
-                    // console.log(img_src);
-                    
-                    var img_src = [
-                        './images/health.png',
-                        './images/fitness.png',
-                        './images/learn.pnp',
-                        './images/sustainabiliy.png',
-                        './images/home.png',
-                        './images/relax.png',
-                        './images/family.png',
-                        './images/finance.png'
-                    ];
+            let img_src = document.getElementsByClassName('catimg').src; 
 
-                    const ls = img_src;
-                    
-                    for (let j = 0; j<ls.length; j++);{
+            function pickImg() {
+                let myImg = document.querySelectorAll(".catimg > img")
+                for( let i = 0; i < myImg.length; i++) {
+                    myImg[i].onclick = function(){
+                        newSrc = this.src
+                        img_src = newSrc
+                        sessionStorage.clear();
+                        sessionStorage.setItem('key',newSrc)
+                        let data = sessionStorage.getItem('key')
+                        console.log(data)
                         
-                        const newImg = ls[j]; 
+                    }
+                            
+                        
+                }
+
+
+
+               
+            }
+
+            pickImg();
+            
+            let new_img = document.createElement('img');
+            new_img.classList.add('icon');
+            
+            let images =  sessionStorage.getItem('key')
+            new_img.setAttribute('src',images);
+            
+            
+
+            // new_img.setAttribute('src',img_src);
+            
+         
+            
+          
+            
+            
+            new_but.appendChild(new_img);
 
                         let new_img = document.createElement('img');
                         new_img.classList.add('icon');
@@ -251,28 +211,56 @@ function Handler(){
                     
 
             // let images = document.getElementsByClassName('icon');
-
+            
             // document.addEventListener("click",function(event){
             //     if(event.target.classList.contains("catimg")){
             //         images.src = event.target.src;
+            
             //     }
             // })
 
+     
 
-           
+            let progress = document.createElement('p');
+            progress.innerText = "0/";
+            progress.id = 'progress'
+            new_but.appendChild(progress)
+
+            let time = document.createElement('p');
+            time.innerText = slideValue;
+            time.id = "time"
+            new_but.appendChild(time)
+
+            let del = document.createElement('p');
+            del.innerText = "DELETE";
+            del.id = "delete"
+            new_but.appendChild(del)
+
+            del.addEventListener('click',()=>{
+                append.removeChild(new_but)
+            } )
+
+
           console.log(new_img)
+            
         
         }
 
-}
+
+       
+                       
 
 
-// let habits = document.querySelectorAll('.catimg');
-//     habits.forEach(cat => {
-//         cat.addEventListener('click', ()=>{
-//         cat.classList.toggle('clicked')
-        
-//     })
+// let img = document.querySelectorAll('#new')
+// for(let i=0; i < img.length; i++){
+//     img.onclick = function (i){
+//         alert(this)
+//     }
+// }
+
+// let habits = document.querySelectorAll('.catimg > img');
+// habits.forEach(cat => {
+//     cat.addEventListener('click', ()=>{
+//     alert(this.id)
 // })
-
-
+// })

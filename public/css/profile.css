@@ -121,6 +121,7 @@ main .color {
   align-items: center;
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 50px 0 50px 0;
 }
 
 .cont {
@@ -134,46 +135,10 @@ main .color {
   margin-bottom: 60px;
 }
 
-.form p {
-  margin-top: 20px;
-}
-
-.form h3 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.form .input-box {
-  width: 250px;
-  height: 30px;
-  margin-top: 20px;
-  border: 1px solid rgba(223, 220, 220, 0.5);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0px 20px 0px;
-}
-
-#but {
-  background-color: #e8b4fa;
-  cursor: pointer;
-  width: 150px;
-  height: 40px;
-  border: none;
-  border-radius: 10px;
-}
 main div img {
   width: 50%;
   height: 50%;
-}
+} 
 
 .img-cont {
   width: 400px;

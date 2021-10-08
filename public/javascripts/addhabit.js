@@ -144,34 +144,14 @@ function Handler(){
     let slideValue = document.getElementById('amount').value
     var info = document.getElementById('title').value 
 
+
+
     const task = info;
 
 
     if(!task) {
         alert('Fill the title please!');
         } else {
-            // if(fitCheck != null){
-
-            //     let new_div = document.createElement('div');
-            //     new_div.classList.add('habit_btn');
-            //     append.appendChild(new_div);
-                
-            //     let new_img = document.createElement('img');
-            //     new_img.classList.add('icon')
-            //     new_img.src = "./images/fitness.png";
-            //     new_div.appendChild(new_img);
-
-            //     let new_but = document.createElement('p');
-            //     // new_but.classList.add('habit_btn');
-            //     new_but.id = "drinkwater";
-            //     new_but.innerText = task;
-            //     new_img.appendChild(new_but);
-
-                
-
-            //     console.log(new_but)
-            //     fitCheck = null
-            // }
 
             let new_but = document.createElement('button');
             new_but.classList.add('habit_btn');
@@ -182,61 +162,44 @@ function Handler(){
             
             let img_src = document.getElementsByClassName('catimg').src; 
 
-            // var img_src = [
-            //     '../images/health.png',
-            //     '../images/fitness.png',
-            //     '../images/learn.pnp',
-            //     '../images/sustainabiliy.png',
-            //     '../images/home.png',
-            //     '../images/relax.png',
-            //     '../images/family.png',
-            //     '../images/finance.png'
-            // ];
-
-            // var img_id = [
-            //     // 'health',
-            //     // 'fitness',
-            //     // 'learn',
-            //     // 'sustainability',
-            //     // 'home',
-            //     // 'relax',
-            //     // 'family',
-            //     // 'finance'
-            // ];
-
-
-            // for (let i = 0; i < images.length; i++) {
-                // const img = document.createElement('img');
-                // img.classList.add('icon');
-                // img.setAttribute('src',images[i]);
-                
-                // }
-
-            function pickImg(el) {
-                document.querySelectorAll(".catimg > img").forEach(el=>{
-                    el.src = allimg
-
-                    for( let i = 0; i < allimg.length; i++) {
-                
-                            alert(this.src);
+            function pickImg() {
+                let myImg = document.querySelectorAll(".catimg > img")
+                for( let i = 0; i < myImg.length; i++) {
+                    myImg[i].onclick = function(){
+                        newSrc = this.src
+                        img_src = newSrc
+                        sessionStorage.clear();
+                        sessionStorage.setItem('key',newSrc)
+                        let data = sessionStorage.getItem('key')
+                        console.log(data)
                         
                     }
-                })
+                            
+                        
+                }
+
+
+
+               
             }
-            // let img_src = document.querySelector('.catimg > img').src; 
-            let allimg = document.querySelector('.catimg > img')
 
-
-
-            // console.log(img_src);
-
-
+            pickImg();
+            
             let new_img = document.createElement('img');
             new_img.classList.add('icon');
-            new_img.setAttribute('src',img_src);
-            new_img.id = "new";
-            // new_img.id = img_id;
-            new_img.setAttribute('src',pickImg(el));
+            
+            let images =  sessionStorage.getItem('key')
+            new_img.setAttribute('src',images);
+            
+            
+
+            // new_img.setAttribute('src',img_src);
+            
+         
+            
+          
+            
+            
             new_but.appendChild(new_img);
 
 
@@ -288,9 +251,9 @@ function Handler(){
 //     }
 // }
 
-let habits = document.querySelectorAll('.catimg');
-habits.forEach(cat => {
-    cat.addEventListener('click', ()=>{
-    alert(this.classList)
-})
-})
+// let habits = document.querySelectorAll('.catimg > img');
+// habits.forEach(cat => {
+//     cat.addEventListener('click', ()=>{
+//     alert(this.id)
+// })
+// })
